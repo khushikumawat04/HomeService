@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Edu+VIC+WA+NT+Beginner&family=Poppins:wght@500&display=swap');
+	*{
+		font-family: 'poppins',sans-serif;
+		/*list-style: none;*/
+		text-decoration: none;
+		margin: 0px;
+		padding: 0px;
+		/*background: #f5f5f5;*/
+	}
+
+	/*variable*/
+	:root{
+		 --main-color:#003366;
+		
+		--text-color: #343a40;/*(black)*/
+		
+		--bg-color: #fff;/*(white)*/
+		--box-shadow: 2px 2px  18px rgb(14 52 54/15%);
+		--primary-color:rgba(255,245,203,0.2);
+	}
+
+	.contact_container{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 50px;
+	margin: 20px 50px;
+
+
+}
+
+.contact_message{
+	/*border: 2px solid black;*/
+	height: 600px;
+	width: 100%;
+	background-color: var(--bg-color);
+	box-shadow: var(--box-shadow);}
+
+.contact_message p{
+	font-size: 35px;
+	margin-left: 40px;
+	margin-top: 50px;
+	color: var(--text-color);
+
+}
+.contact_message form{
+	margin: 20px 40px;
+}
+.contact_message form textarea{
+	width: 80%;
+	height: 150px;
+	padding: 10px 20px;
+}
+.contact_input{
+	height: 50px;
+	width: 80%;
+	margin: 20px 0;
+	padding: 0 20px;
+	font-size: 15px;
+	background-color: #f5f5f5;
+	border: none;
+	outline: none;
+
+}
+.contact_btn{
+	padding: 15px 40px;
+	font-size: 20px;
+	border: none;
+	background:linear-gradient(-45deg,#003366,#2d0b00);
+	color: #fff;
+	letter-spacing: 1px;
+
+}
+
+
+.contact_info{
+	/*border: 2px solid black;*/
+	height: 600px;
+	width: 100%;
+	background-color: var(--bg-color);
+	box-shadow: var(--box-shadow);
+}
+.contact_info .head{
+	font-size: 35px;
+	margin-left: 30px;
+	margin-top: 40px;
+	color: var(--text-color);
+
+}
+.contact_info .contact_para{
+	margin: 10px 25px;
+	color: var(--text-color);
+}
+.contact_info .fa{
+	border: 2px solid var(--text-color);
+	border-radius: 50%;
+	padding: 15px;
+	font-size: 30px;
+}
+.contact_icon{
+	margin-left: 30px;
+	margin-top: 30px; 
+
+}
+.icon{
+	padding: 20px 40px;
+}
+
+
+/* media query */
+@media (max-width: 1000px){
+	.contact_container{
+		display: flex;
+		flex-direction: column;
+
+	}
+	/* .contact_message{
+		border: 2px solid red;
+		display: block;
+	} */
+
+	.contact_info p{ 
+		font-size: 30px;
+	}
+	.contact_input{
+		font-size: 25px;
+	}
+	.contact_btn{
+		font-size: 30px;
+	}
+	.contact_info .head{
+		font-size: 60px;
+	}
+	.contact_info .head p{
+		font-size: 30px;
+
+	}
+	.contact_info .fa{
+		font-size: 50px;
+	}
+	.contact_icon p{
+		font-size: 40px;
+
+	}
+
+
+}
